@@ -1,0 +1,68 @@
+<!DOCTYPE html>  <!-- this is a declaration of the document type -->
+
+<html>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my restaurant</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+        p {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        ul li {
+            text-align: center;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: gray;
+            font-weight: bold;
+            color: red;
+            flex: 1;
+            margin: 0 10px;
+            font-size: 0.75em;
+        }
+        @media (max-width: 991px) {
+            ul {
+                flex-wrap: wrap;
+            }
+            ul li {
+                flex: 1 1 45%;
+                margin: 10px 5px;
+            }
+        }
+        @media (max-width: 767px) {
+            ul li {
+                flex: 1 1 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Welcome to my restaurant</h1>
+    <p>Our restaurant serves the following types of food:</p>
+    <ul>
+        <li>Appetizers</li>
+        <li>Main courses</li>
+        <li>Desserts</li>
+    </ul>
+    <p>Our restaurant is located at 123 Main Street</p>
+    <p>For reservations, please call 555-1234</p>
+</body>
+</html>
